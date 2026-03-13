@@ -1,0 +1,73 @@
+# ── Student Dropout Prediction – Docker Compose ──────────
+# Usage:
+#   docker compose up --build        (start all services)
+#   docker compose down -v           (stop & remove volumes)
+
+services:
+
+  # ── MySQL Database ────────────────────────────────────────
+  mysql:
+    image: mysql:8.0
+    container_name: dropout-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root@2218}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-dropout_db}
+    ports:
+      - "3307:3306"                  # host 3307 → container 3306 (avoids conflict with local MySQL)
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${MYSQL_ROOT_PASSWORD:-root@2218}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  # ── Flask ML Service ──────────────────────────────────────
+  flask-ml:
+    build:
+      context: ./BACKEND/demo/src/main/resources/flask-ml
+      dockerfile: Dockerfile
+    container_name: dropout-flask-ml
+    restart: unless-stopped
+    ports:
+      - "5001:5000"                  # host 5001 → container 5000
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5000/ml/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── Spring Boot Backend ───────────────────────────────────
+  backend:
+    build:
+      context: ./BACKEND/demo
+      dockerfile: Dockerfile
+    container_name: dropout-backend
+    restart: unless-stopped
+    environment:
+      MYSQL_USER: root
+      MYSQL_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root@2218}
+      FLASK_ML_URL: http://flask-ml:5000
+    ports:
+      - "8080:8080"
+    depends_on:
+      mysql:
+        condition: service_healthy
+      flask-ml:
+        condition: service_healthy
+
+  # ── React Frontend (Nginx) ───────────────────────────────
+  frontend:
+    build:
+      context: ./FRONTEND/my-react-app
+      dockerfile: Dockerfile
+    container_name: dropout-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:80"                    # http://localhost:3000
+    depends_on:
+      - backend
+
+volumes:
+  mysql_data:

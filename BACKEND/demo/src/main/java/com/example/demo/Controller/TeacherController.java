@@ -7,6 +7,7 @@ import com.example.demo.Repository.TeacherRepository;
 import com.example.demo.entity.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
@@ -16,7 +17,7 @@ import java.util.*;
 
 @RestController
 @RequestMapping("/api/teacher")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "*")
 public class TeacherController {
 
     @Autowired private TeacherRepository    teacherRepository;
@@ -24,7 +25,8 @@ public class TeacherController {
     @Autowired private ScoreRepository      scoreRepository;
     @Autowired private PredictionRepository predictionRepository;
 
-    private static final String FLASK_URL = "http://localhost:5000";
+    @Value("${flask.ml.url:http://localhost:5000}")
+    private String FLASK_URL;
 
     // ── ADD STUDENT (saved as PENDING — teacher must approve) ──
     @PostMapping("/students")
