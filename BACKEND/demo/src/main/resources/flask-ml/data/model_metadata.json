@@ -1,0 +1,22 @@
+{
+  "feature_names": [
+    "test_1",
+    "test_2",
+    "test_3",
+    "test_4",
+    "main_exam"
+  ],
+  "status_meaning": {
+    "A": "Pass",
+    "R": "At Risk"
+  },
+  "pass_threshold": 7.0,
+  "num_clusters": 4,
+  "dt_accuracy": 0.938,
+  "dt_precision": 0.938,
+  "dt_recall": 0.984,
+  "dt_f1": 0.961,
+  "dt_kappa": 0.884,
+  "dt_mae": 0.0735,
+  "dt_rmse": 0.2267
+}

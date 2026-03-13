@@ -1,0 +1,2272 @@
+[
+  {
+    "antecedents": [
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "test_1_LOW"
+    ],
+    "support": 0.9643,
+    "confidence": 0.9883,
+    "lift": 0.9997
+  },
+  {
+    "antecedents": [
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW"
+    ],
+    "support": 0.9643,
+    "confidence": 0.9754,
+    "lift": 0.9997
+  },
+  {
+    "antecedents": [
+      "test_3_LOW"
+    ],
+    "consequents": [
+      "test_1_LOW"
+    ],
+    "support": 0.9771,
+    "confidence": 0.9899,
+    "lift": 1.0013
+  },
+  {
+    "antecedents": [
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW"
+    ],
+    "support": 0.9771,
+    "confidence": 0.9884,
+    "lift": 1.0013
+  },
+  {
+    "antecedents": [
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_1_LOW"
+    ],
+    "support": 0.9771,
+    "confidence": 0.9884,
+    "lift": 0.9999
+  },
+  {
+    "antecedents": [
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_4_LOW"
+    ],
+    "support": 0.9771,
+    "confidence": 0.9884,
+    "lift": 0.9999
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_1_LOW"
+    ],
+    "support": 0.9671,
+    "confidence": 0.9898,
+    "lift": 1.0012
+  },
+  {
+    "antecedents": [
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW"
+    ],
+    "support": 0.9671,
+    "confidence": 0.9783,
+    "lift": 1.0012
+  },
+  {
+    "antecedents": [
+      "test_3_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW"
+    ],
+    "support": 0.9643,
+    "confidence": 0.9768,
+    "lift": 1.0012
+  },
+  {
+    "antecedents": [
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW"
+    ],
+    "support": 0.9643,
+    "confidence": 0.9883,
+    "lift": 1.0012
+  },
+  {
+    "antecedents": [
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "test_4_LOW"
+    ],
+    "support": 0.9671,
+    "confidence": 0.9912,
+    "lift": 1.0027
+  },
+  {
+    "antecedents": [
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW"
+    ],
+    "support": 0.9671,
+    "confidence": 0.9783,
+    "lift": 1.0027
+  },
+  {
+    "antecedents": [
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW"
+    ],
+    "support": 0.9543,
+    "confidence": 0.978,
+    "lift": 1.0009
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW"
+    ],
+    "support": 0.9543,
+    "confidence": 0.9766,
+    "lift": 1.0009
+  },
+  {
+    "antecedents": [
+      "test_3_LOW"
+    ],
+    "consequents": [
+      "test_4_LOW"
+    ],
+    "support": 0.9757,
+    "confidence": 0.9884,
+    "lift": 0.9998
+  },
+  {
+    "antecedents": [
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW"
+    ],
+    "support": 0.9757,
+    "confidence": 0.987,
+    "lift": 0.9998
+  },
+  {
+    "antecedents": [
+      "test_3_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW"
+    ],
+    "support": 0.9643,
+    "confidence": 0.9768,
+    "lift": 0.9997
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW"
+    ],
+    "support": 0.9643,
+    "confidence": 0.9868,
+    "lift": 0.9997
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_4_LOW"
+    ],
+    "support": 0.9657,
+    "confidence": 0.9883,
+    "lift": 0.9997
+  },
+  {
+    "antecedents": [
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW"
+    ],
+    "support": 0.9657,
+    "confidence": 0.9769,
+    "lift": 0.9997
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "test_1_LOW"
+    ],
+    "support": 0.9543,
+    "confidence": 0.9896,
+    "lift": 1.0011
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW"
+    ],
+    "support": 0.9543,
+    "confidence": 0.9766,
+    "lift": 1.0009
+  },
+  {
+    "antecedents": [
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW"
+    ],
+    "support": 0.9543,
+    "confidence": 0.9896,
+    "lift": 1.0025
+  },
+  {
+    "antecedents": [
+      "test_3_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9543,
+    "confidence": 0.9667,
+    "lift": 1.0025
+  },
+  {
+    "antecedents": [
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9543,
+    "confidence": 0.978,
+    "lift": 1.0009
+  },
+  {
+    "antecedents": [
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_2_LOW"
+    ],
+    "support": 0.9543,
+    "confidence": 0.9653,
+    "lift": 1.0011
+  },
+  {
+    "antecedents": [
+      "test_2_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_1_LOW"
+    ],
+    "support": 0.9557,
+    "confidence": 0.9882,
+    "lift": 0.9996
+  },
+  {
+    "antecedents": [
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_4_LOW"
+    ],
+    "support": 0.9557,
+    "confidence": 0.9911,
+    "lift": 1.0026
+  },
+  {
+    "antecedents": [
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW"
+    ],
+    "support": 0.9557,
+    "confidence": 0.9781,
+    "lift": 1.0024
+  },
+  {
+    "antecedents": [
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9557,
+    "confidence": 0.9795,
+    "lift": 1.0024
+  },
+  {
+    "antecedents": [
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9557,
+    "confidence": 0.9668,
+    "lift": 1.0026
+  },
+  {
+    "antecedents": [
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9557,
+    "confidence": 0.9668,
+    "lift": 0.9996
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW",
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "test_1_LOW"
+    ],
+    "support": 0.9443,
+    "confidence": 0.9895,
+    "lift": 1.001
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW"
+    ],
+    "support": 0.9443,
+    "confidence": 0.9764,
+    "lift": 1.0007
+  },
+  {
+    "antecedents": [
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW"
+    ],
+    "support": 0.9443,
+    "confidence": 0.9793,
+    "lift": 1.0022
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9443,
+    "confidence": 0.9664,
+    "lift": 1.0022
+  },
+  {
+    "antecedents": [
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9443,
+    "confidence": 0.9678,
+    "lift": 1.0007
+  },
+  {
+    "antecedents": [
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW",
+      "test_2_LOW"
+    ],
+    "support": 0.9443,
+    "confidence": 0.9552,
+    "lift": 1.001
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_1_LOW"
+    ],
+    "support": 0.9657,
+    "confidence": 0.9898,
+    "lift": 1.0012
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_4_LOW"
+    ],
+    "support": 0.9657,
+    "confidence": 0.9883,
+    "lift": 0.9997
+  },
+  {
+    "antecedents": [
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW"
+    ],
+    "support": 0.9657,
+    "confidence": 0.9883,
+    "lift": 1.0012
+  },
+  {
+    "antecedents": [
+      "test_3_LOW"
+    ],
+    "consequents": [
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9657,
+    "confidence": 0.9783,
+    "lift": 1.0012
+  },
+  {
+    "antecedents": [
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9657,
+    "confidence": 0.9769,
+    "lift": 0.9997
+  },
+  {
+    "antecedents": [
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9657,
+    "confidence": 0.9769,
+    "lift": 1.0012
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_1_LOW"
+    ],
+    "support": 0.9557,
+    "confidence": 0.9911,
+    "lift": 1.0026
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW"
+    ],
+    "support": 0.9557,
+    "confidence": 0.9781,
+    "lift": 1.0009
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW"
+    ],
+    "support": 0.9557,
+    "confidence": 0.9882,
+    "lift": 1.0011
+  },
+  {
+    "antecedents": [
+      "test_3_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9557,
+    "confidence": 0.9682,
+    "lift": 1.0011
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9557,
+    "confidence": 0.9781,
+    "lift": 1.0009
+  },
+  {
+    "antecedents": [
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "main_exam_LOW"
+    ],
+    "support": 0.9557,
+    "confidence": 0.9668,
+    "lift": 1.0026
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_1_LOW"
+    ],
+    "support": 0.9557,
+    "confidence": 0.9896,
+    "lift": 1.0011
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_4_LOW"
+    ],
+    "support": 0.9557,
+    "confidence": 0.9882,
+    "lift": 0.9996
+  },
+  {
+    "antecedents": [
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW"
+    ],
+    "support": 0.9557,
+    "confidence": 0.9781,
+    "lift": 1.0009
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9557,
+    "confidence": 0.9781,
+    "lift": 1.0009
+  },
+  {
+    "antecedents": [
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9557,
+    "confidence": 0.9668,
+    "lift": 0.9996
+  },
+  {
+    "antecedents": [
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9557,
+    "confidence": 0.9668,
+    "lift": 1.0011
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "test_4_LOW"
+    ],
+    "support": 0.9557,
+    "confidence": 0.9911,
+    "lift": 1.0026
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW"
+    ],
+    "support": 0.9557,
+    "confidence": 0.9795,
+    "lift": 1.0039
+  },
+  {
+    "antecedents": [
+      "test_2_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW"
+    ],
+    "support": 0.9557,
+    "confidence": 0.9882,
+    "lift": 1.0011
+  },
+  {
+    "antecedents": [
+      "test_3_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9557,
+    "confidence": 0.9682,
+    "lift": 1.0011
+  },
+  {
+    "antecedents": [
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9557,
+    "confidence": 0.9795,
+    "lift": 1.0039
+  },
+  {
+    "antecedents": [
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_2_LOW"
+    ],
+    "support": 0.9557,
+    "confidence": 0.9668,
+    "lift": 1.0026
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW"
+    ],
+    "support": 0.9429,
+    "confidence": 0.9778,
+    "lift": 1.0006
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW"
+    ],
+    "support": 0.9429,
+    "confidence": 0.9778,
+    "lift": 1.0021
+  },
+  {
+    "antecedents": [
+      "test_2_LOW",
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW"
+    ],
+    "support": 0.9429,
+    "confidence": 0.988,
+    "lift": 1.0009
+  },
+  {
+    "antecedents": [
+      "test_3_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW",
+      "main_exam_LOW"
+    ],
+    "support": 0.9429,
+    "confidence": 0.9551,
+    "lift": 1.0009
+  },
+  {
+    "antecedents": [
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "main_exam_LOW"
+    ],
+    "support": 0.9429,
+    "confidence": 0.9663,
+    "lift": 1.0021
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_2_LOW"
+    ],
+    "support": 0.9429,
+    "confidence": 0.9649,
+    "lift": 1.0006
+  },
+  {
+    "antecedents": [
+      "test_2_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW"
+    ],
+    "support": 0.9457,
+    "confidence": 0.9778,
+    "lift": 1.0007
+  },
+  {
+    "antecedents": [
+      "test_2_LOW",
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_4_LOW"
+    ],
+    "support": 0.9457,
+    "confidence": 0.991,
+    "lift": 1.0025
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW"
+    ],
+    "support": 0.9457,
+    "confidence": 0.9793,
+    "lift": 1.0037
+  },
+  {
+    "antecedents": [
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9457,
+    "confidence": 0.9693,
+    "lift": 1.0037
+  },
+  {
+    "antecedents": [
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW",
+      "main_exam_LOW"
+    ],
+    "support": 0.9457,
+    "confidence": 0.9566,
+    "lift": 1.0025
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9457,
+    "confidence": 0.9678,
+    "lift": 1.0007
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_4_LOW"
+    ],
+    "support": 0.9529,
+    "confidence": 0.9881,
+    "lift": 0.9996
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW"
+    ],
+    "support": 0.9529,
+    "confidence": 0.9766,
+    "lift": 0.9994
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW"
+    ],
+    "support": 0.9529,
+    "confidence": 0.9867,
+    "lift": 0.9995
+  },
+  {
+    "antecedents": [
+      "test_3_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9529,
+    "confidence": 0.9653,
+    "lift": 0.9995
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9529,
+    "confidence": 0.9751,
+    "lift": 0.9994
+  },
+  {
+    "antecedents": [
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "main_exam_LOW"
+    ],
+    "support": 0.9529,
+    "confidence": 0.9639,
+    "lift": 0.9996
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_2_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_1_LOW"
+    ],
+    "support": 0.9457,
+    "confidence": 0.9895,
+    "lift": 1.001
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_4_LOW"
+    ],
+    "support": 0.9457,
+    "confidence": 0.991,
+    "lift": 1.0025
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW"
+    ],
+    "support": 0.9457,
+    "confidence": 0.9793,
+    "lift": 1.0037
+  },
+  {
+    "antecedents": [
+      "test_2_LOW",
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW"
+    ],
+    "support": 0.9457,
+    "confidence": 0.9895,
+    "lift": 1.0024
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9457,
+    "confidence": 0.9807,
+    "lift": 1.0037
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9457,
+    "confidence": 0.9693,
+    "lift": 1.0052
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9457,
+    "confidence": 0.9678,
+    "lift": 1.0007
+  },
+  {
+    "antecedents": [
+      "test_2_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9457,
+    "confidence": 0.9778,
+    "lift": 1.0007
+  },
+  {
+    "antecedents": [
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9457,
+    "confidence": 0.9807,
+    "lift": 1.0052
+  },
+  {
+    "antecedents": [
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_2_LOW"
+    ],
+    "support": 0.9457,
+    "confidence": 0.9678,
+    "lift": 1.0037
+  },
+  {
+    "antecedents": [
+      "test_3_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW",
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9457,
+    "confidence": 0.958,
+    "lift": 1.0024
+  },
+  {
+    "antecedents": [
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9457,
+    "confidence": 0.9693,
+    "lift": 1.0037
+  },
+  {
+    "antecedents": [
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9457,
+    "confidence": 0.9566,
+    "lift": 1.0025
+  },
+  {
+    "antecedents": [
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_2_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9457,
+    "confidence": 0.9566,
+    "lift": 1.001
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "main_exam_LOW",
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "test_1_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.9909,
+    "lift": 1.0024
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "main_exam_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.9776,
+    "lift": 1.0019
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW",
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.9894,
+    "lift": 1.0023
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.979,
+    "lift": 1.0019
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.9689,
+    "lift": 1.0048
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW",
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.979,
+    "lift": 1.0019
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_2_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.966,
+    "lift": 1.0018
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.9689,
+    "lift": 1.0018
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW",
+      "test_2_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.9561,
+    "lift": 1.0019
+  },
+  {
+    "antecedents": [
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "main_exam_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.9689,
+    "lift": 1.0048
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.9561,
+    "lift": 1.0019
+  },
+  {
+    "antecedents": [
+      "test_3_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW",
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.9465,
+    "lift": 1.0023
+  },
+  {
+    "antecedents": [
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "main_exam_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.9575,
+    "lift": 1.0019
+  },
+  {
+    "antecedents": [
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "main_exam_LOW",
+      "test_2_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.9451,
+    "lift": 1.0024
+  },
+  {
+    "antecedents": [
+      "test_4_LOW",
+      "main_exam_LOW",
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "test_1_LOW"
+    ],
+    "support": 0.9357,
+    "confidence": 0.9894,
+    "lift": 1.0009
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW",
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_4_LOW"
+    ],
+    "support": 0.9357,
+    "confidence": 0.9909,
+    "lift": 1.0024
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW",
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW"
+    ],
+    "support": 0.9357,
+    "confidence": 0.9791,
+    "lift": 1.0034
+  },
+  {
+    "antecedents": [
+      "test_2_LOW",
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW"
+    ],
+    "support": 0.9357,
+    "confidence": 0.9791,
+    "lift": 1.002
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW",
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9357,
+    "confidence": 0.9805,
+    "lift": 1.0035
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9357,
+    "confidence": 0.9689,
+    "lift": 1.0048
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9357,
+    "confidence": 0.9675,
+    "lift": 1.0004
+  },
+  {
+    "antecedents": [
+      "test_2_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9357,
+    "confidence": 0.9675,
+    "lift": 1.0004
+  },
+  {
+    "antecedents": [
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9357,
+    "confidence": 0.9704,
+    "lift": 1.0048
+  },
+  {
+    "antecedents": [
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW",
+      "test_2_LOW"
+    ],
+    "support": 0.9357,
+    "confidence": 0.9576,
+    "lift": 1.0035
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW",
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9357,
+    "confidence": 0.9576,
+    "lift": 1.002
+  },
+  {
+    "antecedents": [
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW",
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9357,
+    "confidence": 0.959,
+    "lift": 1.0034
+  },
+  {
+    "antecedents": [
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW",
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9357,
+    "confidence": 0.9465,
+    "lift": 1.0024
+  },
+  {
+    "antecedents": [
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_4_LOW",
+      "main_exam_LOW",
+      "test_2_LOW"
+    ],
+    "support": 0.9357,
+    "confidence": 0.9465,
+    "lift": 1.0009
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "main_exam_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_1_LOW"
+    ],
+    "support": 0.9443,
+    "confidence": 0.991,
+    "lift": 1.0025
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "main_exam_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_4_LOW"
+    ],
+    "support": 0.9443,
+    "confidence": 0.988,
+    "lift": 0.9995
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW"
+    ],
+    "support": 0.9443,
+    "confidence": 0.9778,
+    "lift": 1.0007
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW",
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW"
+    ],
+    "support": 0.9443,
+    "confidence": 0.988,
+    "lift": 1.0009
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9443,
+    "confidence": 0.9793,
+    "lift": 1.0022
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9443,
+    "confidence": 0.9678,
+    "lift": 1.0007
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9443,
+    "confidence": 0.9664,
+    "lift": 1.0007
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9443,
+    "confidence": 0.9778,
+    "lift": 1.0007
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9443,
+    "confidence": 0.9764,
+    "lift": 1.0007
+  },
+  {
+    "antecedents": [
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "main_exam_LOW"
+    ],
+    "support": 0.9443,
+    "confidence": 0.9664,
+    "lift": 1.0022
+  },
+  {
+    "antecedents": [
+      "test_3_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW",
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9443,
+    "confidence": 0.9566,
+    "lift": 1.0009
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9443,
+    "confidence": 0.9664,
+    "lift": 1.0007
+  },
+  {
+    "antecedents": [
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "main_exam_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9443,
+    "confidence": 0.9552,
+    "lift": 0.9995
+  },
+  {
+    "antecedents": [
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "main_exam_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9443,
+    "confidence": 0.9552,
+    "lift": 1.0025
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_2_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.9776,
+    "lift": 1.0004
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_2_LOW",
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_4_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.9909,
+    "lift": 1.0024
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "main_exam_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.9805,
+    "lift": 1.0049
+  },
+  {
+    "antecedents": [
+      "test_2_LOW",
+      "test_4_LOW",
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.9879,
+    "lift": 1.0008
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.9689,
+    "lift": 1.0033
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW",
+      "main_exam_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.9575,
+    "lift": 1.0034
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.9689,
+    "lift": 1.0018
+  },
+  {
+    "antecedents": [
+      "test_2_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "main_exam_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.966,
+    "lift": 1.0018
+  },
+  {
+    "antecedents": [
+      "test_2_LOW",
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.979,
+    "lift": 1.0034
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_2_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.9675,
+    "lift": 1.0033
+  },
+  {
+    "antecedents": [
+      "test_3_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW",
+      "test_4_LOW",
+      "main_exam_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.9465,
+    "lift": 1.0008
+  },
+  {
+    "antecedents": [
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "main_exam_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.9575,
+    "lift": 1.0049
+  },
+  {
+    "antecedents": [
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_2_LOW",
+      "main_exam_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.9451,
+    "lift": 1.0024
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_2_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9343,
+    "confidence": 0.9561,
+    "lift": 1.0004
+  },
+  {
+    "antecedents": [
+      "test_2_LOW",
+      "test_3_LOW",
+      "main_exam_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_1_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9908,
+    "lift": 1.0023
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "main_exam_LOW",
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9803,
+    "lift": 1.0047
+  },
+  {
+    "antecedents": [
+      "test_2_LOW",
+      "main_exam_LOW",
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9893,
+    "lift": 1.0022
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "main_exam_LOW",
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_4_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9908,
+    "lift": 1.0023
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_2_LOW",
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9789,
+    "lift": 1.0017
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "main_exam_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9715,
+    "lift": 1.0075
+  },
+  {
+    "antecedents": [
+      "test_2_LOW",
+      "main_exam_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9789,
+    "lift": 1.0017
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW",
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_2_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9686,
+    "lift": 1.0045
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "main_exam_LOW",
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9818,
+    "lift": 1.0048
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "main_exam_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9686,
+    "lift": 1.0015
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW",
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9803,
+    "lift": 1.0047
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_2_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9686,
+    "lift": 1.0015
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW",
+      "test_2_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9586,
+    "lift": 1.0045
+  },
+  {
+    "antecedents": [
+      "test_2_LOW",
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "main_exam_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9686,
+    "lift": 1.0045
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9701,
+    "lift": 1.0045
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9586,
+    "lift": 1.0045
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW",
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.96,
+    "lift": 1.0045
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW",
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9701,
+    "lift": 1.0045
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_2_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9572,
+    "lift": 1.0015
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW",
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9488,
+    "lift": 1.0047
+  },
+  {
+    "antecedents": [
+      "test_2_LOW",
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "main_exam_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9572,
+    "lift": 1.0015
+  },
+  {
+    "antecedents": [
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "main_exam_LOW",
+      "test_2_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9474,
+    "lift": 1.0048
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "main_exam_LOW",
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.96,
+    "lift": 1.0045
+  },
+  {
+    "antecedents": [
+      "test_3_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW",
+      "main_exam_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9474,
+    "lift": 1.0017
+  },
+  {
+    "antecedents": [
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "main_exam_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.96,
+    "lift": 1.0075
+  },
+  {
+    "antecedents": [
+      "main_exam_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "test_2_LOW",
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9474,
+    "lift": 1.0017
+  },
+  {
+    "antecedents": [
+      "test_4_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "main_exam_LOW",
+      "test_2_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9364,
+    "lift": 1.0023
+  },
+  {
+    "antecedents": [
+      "test_3_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW",
+      "main_exam_LOW",
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9378,
+    "lift": 1.0022
+  },
+  {
+    "antecedents": [
+      "test_2_LOW"
+    ],
+    "consequents": [
+      "test_3_LOW",
+      "main_exam_LOW",
+      "test_4_LOW",
+      "test_1_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9488,
+    "lift": 1.0047
+  },
+  {
+    "antecedents": [
+      "test_1_LOW"
+    ],
+    "consequents": [
+      "test_2_LOW",
+      "test_3_LOW",
+      "main_exam_LOW",
+      "test_4_LOW"
+    ],
+    "support": 0.9257,
+    "confidence": 0.9364,
+    "lift": 1.0023
+  }
+]
