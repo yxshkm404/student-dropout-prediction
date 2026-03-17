@@ -1,0 +1,40 @@
+site_name: "Student Dropout Prediction System"
+site_url: https://yxshkm404.github.io/student-dropout-prediction/
+repo_url: https://github.com/yxshkm404/student-dropout-prediction
+repo_name: GitHub
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/white-balance-sunny
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+nav:
+  - Home: index.md
+  - 🌟 Features & Roles: features.md
+  - 🧠 How the AI Works: prediction-logic.md
+  - 🧩 System Architecture: architecture.md
+  - 🚀 Setup & Installation: installation.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - toc:
+      permalink: true

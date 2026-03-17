@@ -1,30 +1,48 @@
-# 🏗 Student Dropout Prediction System — Architecture
+# 🧩 System Architecture
 
-## Overview
+Ever wonder how the app actually works behind the scenes? 
 
-This is a **full-stack web application** that predicts whether a student is at risk of dropping out based on their test scores, using **Machine Learning** algorithms. It uses a role-based access system with three user types.
+Building a web app is a lot like **running a restaurant**. Let's break down the technical jargon into a simple analogy!
 
----
+### 🍔 The Restaurant Analogy
 
-## 🔐 User Roles
+1. **Frontend (The Dining Room & Menu):** 
+   * *Tech:* React, Vite, Tailwind CSS
+   * This is what you see and click on. Just like a beautiful menu in a restaurant, the frontend is designed to be easy to read and interact with.
+2. **Backend (The Waiter):**
+   * *Tech:* Spring Boot, Java
+   * When you click "Run Prediction", the Frontend hands your request to the Backend. The Backend acts like a waiter—it takes your order (the student's scores), walks back to the kitchen, and eventually brings you the result.
+3. **Database (The Pantry & Order History):**
+   * *Tech:* MySQL
+   * The waiter needs to know if the student exists or what their past scores were. They look this up in the Database, which is a giant digital filing cabinet holding all the school's records.
+4. **ML Service (The Head Chef):**
+   * *Tech:* Flask, Python, Machine Learning
+   * This is the brain! When the waiter brings the scores to the kitchen, the Head Chef (the AI) looks at them, applies complex recipes (algorithms), and says, *"This student is at risk of dropping out."* The waiter takes this information and brings it back to you!
 
-| Role | Login Credentials | What They Can Do |
-|------|------------------|-----------------|
-| **Principal** | Email: `principal@school.com` / Password: `principal123` | Approve/reject teachers, monitor all students, view statistics |
-| **Teacher** | Registered via the app (needs Principal approval) | Add students, enter scores, run ML predictions, view model info |
-| **Student** | Added by their Teacher (needs Teacher approval) | View own scores, view dropout prediction, update profile |
+### High-Level Architecture Diagram
 
-### Approval Flow
-
+```text
+                                  [ NGINX ]
+                                  (Port 80)
+                                      │
+                 ┌────────────────────┴────────────────────┐
+                 ▼                                         ▼
+   ┌───────────────────────────┐             ┌───────────────────────────┐
+   │       FRONTEND APP        │             │      SPRING BOOT API      │
+   │  (React + Vite + Tailwind)│             │  (Java 17, Hibernate/JPA) │
+   │      Port: 3000           │             │      Port: 8080           │
+   └───────────────────────────┘             └─────────────┬─────────────┘
+                                                           │
+                        ┌──────────────────────────────────┤
+                        ▼                                  ▼
+          ┌───────────────────────────┐      ┌───────────────────────────┐
+          │      FLASK ML API         │      │       MYSQL DATABASE      │
+          │  (Python 3.11, scikit)    │      │         (MySQL 8)         │
+          │      Port: 5000           │      │      Port: 3306           │
+          └───────────────────────────┘      └───────────────────────────┘
 ```
-Teacher registers → PENDING → Principal approves → APPROVED (can login)
-Student is added  → PENDING → Teacher approves  → APPROVED (can login)
-```
 
----
-
-## 🧩 System Architecture
-
+### Detailed Component Flow
 ```mermaid
 graph TB
     subgraph "Frontend — React 19 + Vite"
@@ -180,29 +198,28 @@ erDiagram
 
 ---
 
-## 🤖 Machine Learning Pipeline
+## 🤖 The "Brain" (Machine Learning Pipeline)
 
-The Flask ML service uses **3 algorithms** on pre-trained models:
+The system doesn't just guess; it uses three mathematical "recipes" (algorithms) working together:
 
-### 1. J48 Decision Tree (Classification)
-- **Input:** 5 test scores (normalized via `scaler.pkl`)
-- **Output:** `A` (Pass) or `R` (At Risk) + probability percentages
-- **Accuracy:** ~93.8%
+### 1. The Decision Maker (J48 Decision Tree)
+*   **What it does:** It looks at the 5 test scores and makes a firm decision: **Pass** or **At Risk**.
+*   *Analogy:* Imagine a flowchart that says, "If Test 1 is below 7, go left. If Test 2 is above 7, go right." The AI learned this flowchart by studying 700 past students.
 
-### 2. K-Means Clustering (Grouping)
-- **When:** Only runs if student is classified as "At Risk"
-- **Output:** Assigns student to 1 of 4 risk groups:
+### 2. The Organizer (K-Means Clustering)
+*   **What it does:** If a student is marked "At Risk", this algorithm groups them into one of 4 severity levels so teachers know who needs help first.
+*   *Analogy:* It's like sorting laundry into "Delicate," "Normal," and "Heavy Duty." It finds students who have similar struggles and puts them in the same group.
 
-| Cluster | Description |
+| Severity Level | What it means |
 |---------|------------|
-| 0 | Very Low Scorer — needs urgent support in all tests |
-| 1 | Borderline Fail — slightly below passing in all tests |
-| 2 | Average Weak — moderate scores but below threshold |
-| 3 | Low Main Exam — weak in main exam and tests |
+| 0 | **Very Low Scorer** — needs urgent support in all subjects |
+| 1 | **Borderline Fail** — slightly below passing |
+| 2 | **Average Weak** — moderate scores but missing the mark |
+| 3 | **Low Main Exam** — does okay on tests, but fails the big exam |
 
-### 3. Apriori Association Rules (Pattern Detection)
-- **Purpose:** Finds patterns like "students who fail Test 1 usually also fail Test 3"
-- **Output:** Matching rules with confidence percentages
+### 3. The Pattern Finder (Apriori Association Rules)
+*   **What it does:** It looks for hidden relationships between different tests. 
+*   *Analogy:* Just like Amazon says "People who bought a flashlight also bought batteries," this algorithm says "Students who fail Test 1 almost always fail Test 3." This helps teachers catch problems early!
 
 ---
 
