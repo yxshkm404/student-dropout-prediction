@@ -45,14 +45,14 @@ export default function TeacherDashboard() {
 
   useEffect(() => {
     if (!teacherId) return;
-    fetch(`http://localhost:8080/api/teacher/students/${teacherId}`)
+    fetch(`/api/teacher/students/${teacherId}`)
       .then(r=>r.json()).then(d => {
         if (d.success) {
           setStats({ count: d.count, approved: d.approved, pending: d.pending, atRisk: 0 });
           setPending((d.students||[]).filter(s=>s.status==="PENDING").slice(0,4));
         }
       }).catch(()=>{});
-    fetch(`http://localhost:8080/api/teacher/predictions/${teacherId}`)
+    fetch(`/api/teacher/predictions/${teacherId}`)
       .then(r=>r.json()).then(d => {
         if (d.success) {
           setPreds((d.predictions||[]).slice(0,5));
@@ -62,12 +62,12 @@ export default function TeacherDashboard() {
   }, [teacherId]);
 
   const handleApprove = async (id) => {
-    await fetch(`http://localhost:8080/api/teacher/students/approve/${id}`, { method:"PUT" });
+    await fetch(`/api/teacher/students/approve/${id}`, { method:"PUT" });
     setPending(p => p.filter(s=>s.id!==id));
     setStats(s => s ? { ...s, pending: s.pending-1, approved: s.approved+1 } : s);
   };
   const handleReject = async (id) => {
-    await fetch(`http://localhost:8080/api/teacher/students/reject/${id}`, { method:"PUT" });
+    await fetch(`/api/teacher/students/reject/${id}`, { method:"PUT" });
     setPending(p => p.filter(s=>s.id!==id));
     setStats(s => s ? { ...s, pending: s.pending-1 } : s);
   };

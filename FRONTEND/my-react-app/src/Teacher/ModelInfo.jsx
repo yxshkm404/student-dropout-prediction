@@ -9,9 +9,9 @@ export default function ModelInfo() {
 
   useEffect(() => {
     Promise.all([
-      fetch("http://localhost:8080/api/teacher/model/metrics").then(r=>r.json()),
-      fetch("http://localhost:8080/api/teacher/clusters").then(r=>r.json()),
-      fetch("http://localhost:8080/api/teacher/rules").then(r=>r.json()),
+      fetch("/api/teacher/model/metrics").then(r=>r.json()),
+      fetch("/api/teacher/clusters").then(r=>r.json()),
+      fetch("/api/teacher/rules").then(r=>r.json()),
     ]).then(([m, c, r]) => {
       if (m.success !== false) setMetrics(m);
       if (c.success) setClusters(c.clusters || []);

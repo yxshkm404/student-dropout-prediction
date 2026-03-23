@@ -54,22 +54,22 @@ export default function PrincipalDashboard() {
 
   // Data fetches
   useEffect(() => {
-    fetch("http://localhost:8080/api/principal/statistics")
+    fetch("/api/principal/statistics")
       .then(r => r.json()).then(d => { if (d.success) setStats(d); }).catch(() => {});
-    fetch("http://localhost:8080/api/principal/teachers/pending")
+    fetch("/api/principal/teachers/pending")
       .then(r => r.json()).then(d => { if (d.success) setPending(d.teachers || []); }).catch(() => {});
-    fetch("http://localhost:8080/api/principal/monitor")
+    fetch("/api/principal/monitor")
       .then(r => r.json()).then(d => { if (d.success) setPreds((d.predictions || []).slice(0, 5)); }).catch(() => {});
   }, []);
 
   const handleApprove = async (id) => {
-    await fetch(`http://localhost:8080/api/principal/teachers/approve/${id}`, { method:"PUT" });
+    await fetch(`/api/principal/teachers/approve/${id}`, { method:"PUT" });
     setPending(p => p.filter(t => t.id !== id));
     setStats(s => s ? { ...s, pendingTeachers: s.pendingTeachers - 1, approvedTeachers: s.approvedTeachers + 1 } : s);
   };
 
   const handleReject = async (id) => {
-    await fetch(`http://localhost:8080/api/principal/teachers/reject/${id}`, { method:"PUT" });
+    await fetch(`/api/principal/teachers/reject/${id}`, { method:"PUT" });
     setPending(p => p.filter(t => t.id !== id));
     setStats(s => s ? { ...s, pendingTeachers: s.pendingTeachers - 1 } : s);
   };

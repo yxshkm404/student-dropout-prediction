@@ -50,9 +50,11 @@ Because this project is heavily reliant on Docker, starting the application is i
 
 ### Application URLs
 Once the build is complete and the containers are running, you can access the services at:
-- **Frontend (React UI):** [http://localhost:3000](http://localhost:3000)
-- **Backend API (Spring Boot):** [http://localhost:8080](http://localhost:8080)
-- **ML Service (Flask):** [http://localhost:5001](http://localhost:5001)
+- **Frontend (React UI):** `http://localhost:<HOST_FRONTEND_PORT>` (default **3100**; set `HOST_FRONTEND_PORT` in `.env`)
+- **Backend API (Spring Boot):** `http://localhost:<HOST_BACKEND_PORT>` (default **8080**)
+- **ML Service (Flask):** `http://localhost:<HOST_FLASK_PORT>` (default **5001**)
+
+The React app calls the API through the same origin as the UI (`/api/...` via Nginx), so you normally only open the frontend URL. MySQL from the host uses port `HOST_MYSQL_PORT` (default **3307**).
 
 ## 🗄️ Connecting to MySQL Workbench
 
@@ -65,7 +67,7 @@ To connect your **MySQL Workbench** to the database powering this application:
 3. Fill in the connection settings:
    - **Connection Name:** `Dropout Prediction DB (Docker)`
    - **Hostname:** `127.0.0.1` (or `localhost`)
-   - **Port:** `3307` *(Crucial: Do not use the default 3306!)*
+   - **Port:** the value of `HOST_MYSQL_PORT` in `.env` (default `3307`; do not use `3306` if it conflicts with a local MySQL)
    - **Username:** `root`
    - **Password:** Click "Store in Vault/Keychain..." and enter the password configured in your `.env` file (the default is usually `root@2218`).
 4. Click **Test Connection**. It should say "Successfully made the MySQL connection".

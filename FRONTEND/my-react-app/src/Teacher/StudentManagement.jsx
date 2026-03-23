@@ -21,7 +21,7 @@ export default function StudentManagement() {
 
   const fetchStudents = () => {
     setLoading(true);
-    fetch(`http://localhost:8080/api/teacher/students/${teacherId}`)
+    fetch(`/api/teacher/students/${teacherId}`)
       .then(r=>r.json()).then(d=>{ if(d.success) setStudents(d.students||[]); })
       .catch(()=>{}).finally(()=>setLoading(false));
   };
@@ -62,13 +62,13 @@ export default function StudentManagement() {
 
   // ── Single actions ──
   const handleApprove = async (id, name) => {
-    await fetch(`http://localhost:8080/api/teacher/students/approve/${id}`, { method:"PUT" });
+    await fetch(`/api/teacher/students/approve/${id}`, { method:"PUT" });
     setStudents(ss => ss.map(s => s.id===id ? { ...s, status:"APPROVED" } : s));
     setSelected(prev => { const next = new Set(prev); next.delete(id); return next; });
     showToast(`✅ ${name} approved!`);
   };
   const handleReject = async (id, name) => {
-    await fetch(`http://localhost:8080/api/teacher/students/reject/${id}`, { method:"PUT" });
+    await fetch(`/api/teacher/students/reject/${id}`, { method:"PUT" });
     setStudents(ss => ss.map(s => s.id===id ? { ...s, status:"REJECTED" } : s));
     setSelected(prev => { const next = new Set(prev); next.delete(id); return next; });
     showToast(`❌ ${name} rejected.`);
@@ -81,7 +81,7 @@ export default function StudentManagement() {
     setBulkBusy(true);
     try {
       await Promise.all(ids.map(id =>
-        fetch(`http://localhost:8080/api/teacher/students/${action}/${id}`, { method:"PUT" })
+        fetch(`/api/teacher/students/${action}/${id}`, { method:"PUT" })
       ));
       setStudents(ss => ss.map(s =>
         ids.includes(s.id) ? { ...s, status: action==="approve" ? "APPROVED" : "REJECTED" } : s
@@ -99,7 +99,7 @@ export default function StudentManagement() {
     }
     setSaving(true);
     try {
-      const res  = await fetch("http://localhost:8080/api/teacher/students", {
+      const res  = await fetch("/api/teacher/students", {
         method:"POST", headers:{"Content-Type":"application/json"},
         body: JSON.stringify({ ...form, teacherId }),
       });

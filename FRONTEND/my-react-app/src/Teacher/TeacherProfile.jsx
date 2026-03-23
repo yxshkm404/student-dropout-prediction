@@ -16,7 +16,7 @@ export default function TeacherProfile() {
 
   const fetchProfile = () => {
     setLoading(true);
-    fetch(`http://localhost:8080/api/teacher/profile/${teacherId}`)
+    fetch(`/api/teacher/profile/${teacherId}`)
       .then(r => r.json())
       .then(d => { if (d.success) setProfile(d); })
       .catch(() => {})
@@ -45,7 +45,7 @@ export default function TeacherProfile() {
       const body = { name: form.name.trim(), email: form.email.trim() };
       if (form.password) body.password = form.password;
 
-      const res  = await fetch(`http://localhost:8080/api/teacher/profile/${teacherId}`, {
+      const res  = await fetch(`/api/teacher/profile/${teacherId}`, {
         method:"PUT", headers:{ "Content-Type":"application/json" },
         body: JSON.stringify(body),
       });

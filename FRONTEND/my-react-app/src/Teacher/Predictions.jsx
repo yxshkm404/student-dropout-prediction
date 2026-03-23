@@ -25,7 +25,7 @@ export default function Predictions() {
       const sid = p.student?.id;
       if (!sid) return;
       try {
-        const r  = await fetch(`http://localhost:8080/api/student/scores/${sid}`);
+        const r  = await fetch(`/api/student/scores/${sid}`);
         const sd = await r.json();
         if (sd.success) {
           map[sid] = ((sd.test1 + sd.test2 + sd.test3 + sd.test4 + sd.mainExam) / 5).toFixed(2);
@@ -37,7 +37,7 @@ export default function Predictions() {
 
   const loadPredictions = useCallback(async () => {
     try {
-      const r = await fetch(`http://localhost:8080/api/teacher/predictions/${teacherId}`);
+      const r = await fetch(`/api/teacher/predictions/${teacherId}`);
       const d = await r.json();
       if (d.success) {
         const list = d.predictions || [];
@@ -49,7 +49,7 @@ export default function Predictions() {
   }, [teacherId]);
 
   useEffect(() => {
-    fetch(`http://localhost:8080/api/teacher/students/${teacherId}`)
+    fetch(`/api/teacher/students/${teacherId}`)
       .then(r=>r.json()).then(d=>{ if(d.success) setStudents((d.students||[]).filter(s=>s.status==="APPROVED")); })
       .catch(()=>{});
     loadPredictions();
@@ -59,7 +59,7 @@ export default function Predictions() {
     if (!selected) { showToast("Select a student first!", true); return; }
     setRunning(true); setResult(null);
     try {
-      const res  = await fetch(`http://localhost:8080/api/teacher/predict/${selected.id}`, { method:"POST" });
+      const res  = await fetch(`/api/teacher/predict/${selected.id}`, { method:"POST" });
       const data = await res.json();
       if (data.success) {
         setResult(data);

@@ -20,7 +20,7 @@ export default function StudentMonitor() {
       const sid = p.student?.id;
       if (!sid) return;
       try {
-        const r  = await fetch(`http://localhost:8080/api/student/scores/${sid}`);
+        const r  = await fetch(`/api/student/scores/${sid}`);
         const sd = await r.json();
         if (sd.success)
           map[sid] = ((sd.test1+sd.test2+sd.test3+sd.test4+sd.mainExam)/5).toFixed(2);
@@ -30,7 +30,7 @@ export default function StudentMonitor() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/principal/monitor")
+    fetch("/api/principal/monitor")
       .then(r => r.json())
       .then(async d => {
         if (d.success) {

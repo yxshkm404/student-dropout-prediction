@@ -10,7 +10,7 @@ export default function ScoreEntry() {
   const [loading,   setLoading]   = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:8080/api/teacher/students/${teacherId}`)
+    fetch(`/api/teacher/students/${teacherId}`)
       .then(r=>r.json()).then(d=>{
         if(d.success) setStudents((d.students||[]).filter(s=>s.status==="APPROVED"));
       }).catch(()=>{}).finally(()=>setLoading(false));
@@ -26,7 +26,7 @@ export default function ScoreEntry() {
     }
     setSaving(true);
     try {
-      const res = await fetch("http://localhost:8080/api/teacher/scores", {
+      const res = await fetch("/api/teacher/scores", {
         method:"POST", headers:{"Content-Type":"application/json"},
         body: JSON.stringify({ studentId: selected.id, ...scores }),
       });

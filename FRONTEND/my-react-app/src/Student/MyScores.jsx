@@ -6,7 +6,7 @@ export default function MyScores() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:8080/api/student/scores/${studentId}`)
+    fetch(`/api/student/scores/${studentId}`)
       .then(r=>r.json()).then(d=>{ if(d.success) setScores(d); })
       .catch(()=>{}).finally(()=>setLoading(false));
   }, [studentId]);

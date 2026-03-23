@@ -6,7 +6,7 @@ export default function MyPrediction() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:8080/api/student/prediction/${studentId}`)
+    fetch(`/api/student/prediction/${studentId}`)
       .then(r=>r.json()).then(d=>{ if(d.success) setPred(d); })
       .catch(()=>{}).finally(()=>setLoading(false));
   }, [studentId]);

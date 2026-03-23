@@ -24,7 +24,7 @@ export default function Statistics() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/principal/statistics")
+    fetch("/api/principal/statistics")
       .then(r => r.json())
       .then(d => { if (d.success) setStats(d); })
       .catch(() => {})

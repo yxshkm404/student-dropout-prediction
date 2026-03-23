@@ -64,7 +64,7 @@ export default function RegisterPage() {
   // Fetch approved teachers when role is STUDENT
   useEffect(() => {
     if (role === "STUDENT") {
-      fetch("http://localhost:8080/api/principal/teachers")
+      fetch("/api/principal/teachers")
         .then(r => r.json())
         .then(d => { if (d.success) setTeachers(d.teachers.filter(t => t.status === "APPROVED")); })
         .catch(() => {});
@@ -86,8 +86,8 @@ export default function RegisterPage() {
     setLoading(true);
     try {
       const url  = role === "TEACHER"
-        ? "http://localhost:8080/api/auth/teacher/register"
-        : "http://localhost:8080/api/teacher/students";
+        ? "/api/auth/teacher/register"
+        : "/api/teacher/students";
       const body = role === "TEACHER"
         ? { name, email, password }
         : { name, email, password, studentId, teacherId: teacherId.toString() };

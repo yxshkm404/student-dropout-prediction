@@ -38,11 +38,11 @@ export default function StudentDashboard() {
 
   useEffect(() => {
     if (!studentId) return;
-    fetch(`http://localhost:8080/api/student/profile/${studentId}`)
+    fetch(`/api/student/profile/${studentId}`)
       .then(r=>r.json()).then(d=>{ if(d.success) setProfile(d); }).catch(()=>{});
-    fetch(`http://localhost:8080/api/student/scores/${studentId}`)
+    fetch(`/api/student/scores/${studentId}`)
       .then(r=>r.json()).then(d=>{ if(d.success) setScores(d); }).catch(()=>{});
-    fetch(`http://localhost:8080/api/student/prediction/${studentId}`)
+    fetch(`/api/student/prediction/${studentId}`)
       .then(r=>r.json()).then(d=>{ if(d.success) setPred(d); }).catch(()=>{});
   }, [studentId]);
 

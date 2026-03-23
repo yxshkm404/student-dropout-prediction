@@ -16,7 +16,7 @@ export default function MyProfile() {
 
   const fetchProfile = () => {
     setLoading(true);
-    fetch(`http://localhost:8080/api/student/profile/${studentId}`)
+    fetch(`/api/student/profile/${studentId}`)
       .then(r => r.json())
       .then(d => { if (d.success) setProfile(d); })
       .catch(() => {})
@@ -45,7 +45,7 @@ export default function MyProfile() {
       const body = { name: form.name.trim(), email: form.email.trim() };
       if (form.password) body.password = form.password;
 
-      const res  = await fetch(`http://localhost:8080/api/student/profile/${studentId}`, {
+      const res  = await fetch(`/api/student/profile/${studentId}`, {
         method:"PUT", headers:{ "Content-Type":"application/json" },
         body: JSON.stringify(body),
       });

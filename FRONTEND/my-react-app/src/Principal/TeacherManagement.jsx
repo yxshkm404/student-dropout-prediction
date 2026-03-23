@@ -16,7 +16,7 @@ export default function TeacherManagement() {
 
   const fetchTeachers = () => {
     setLoading(true);
-    fetch("http://localhost:8080/api/principal/teachers")
+    fetch("/api/principal/teachers")
       .then(r => r.json())
       .then(d => { if (d.success) setTeachers(d.teachers || []); })
       .catch(() => {})
@@ -58,13 +58,13 @@ export default function TeacherManagement() {
 
   // ── Single actions ──
   const handleApprove = async (id, name) => {
-    await fetch(`http://localhost:8080/api/principal/teachers/approve/${id}`, { method:"PUT" });
+    await fetch(`/api/principal/teachers/approve/${id}`, { method:"PUT" });
     setTeachers(ts => ts.map(t => t.id === id ? { ...t, status:"APPROVED" } : t));
     setSelected(prev => { const next = new Set(prev); next.delete(id); return next; });
     showToast(`✅ ${name} approved!`);
   };
   const handleReject = async (id, name) => {
-    await fetch(`http://localhost:8080/api/principal/teachers/reject/${id}`, { method:"PUT" });
+    await fetch(`/api/principal/teachers/reject/${id}`, { method:"PUT" });
     setTeachers(ts => ts.map(t => t.id === id ? { ...t, status:"REJECTED" } : t));
     setSelected(prev => { const next = new Set(prev); next.delete(id); return next; });
     showToast(`❌ ${name} rejected.`);
@@ -77,7 +77,7 @@ export default function TeacherManagement() {
     setBulkBusy(true);
     try {
       await Promise.all(ids.map(id =>
-        fetch(`http://localhost:8080/api/principal/teachers/${action}/${id}`, { method:"PUT" })
+        fetch(`/api/principal/teachers/${action}/${id}`, { method:"PUT" })
       ));
       setTeachers(ts => ts.map(t =>
         ids.includes(t.id) ? { ...t, status: action === "approve" ? "APPROVED" : "REJECTED" } : t
