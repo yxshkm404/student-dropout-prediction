@@ -19,18 +19,12 @@ Building a web app is a lot like **running a restaurant**. Let's break down the 
    * *Tech:* Flask, Python, Machine Learning
    * This is the brain! When the waiter brings the scores to the kitchen, the Head Chef (the AI) looks at them, applies complex recipes (algorithms), and says, *"This student is at risk of dropping out."* The waiter takes this information and brings it back to you!
 
-### High-Level Architecture Diagram
+### Architecture Diagram
 
-```text
-                                  [ NGINX ]
-                                  (Port 80)
-                                      │
-                 ┌────────────────────┴────────────────────┐
-                 ▼                                         ▼
    ┌───────────────────────────┐             ┌───────────────────────────┐
-   │       FRONTEND APP        │             │      SPRING BOOT API      │
+   │       FRONTEND APP        │◄───────────►│      SPRING BOOT API      │
    │  (React + Vite + Tailwind)│             │  (Java 17, Hibernate/JPA) │
-   │      Port: 3000           │             │      Port: 8080           │
+   │        Port: 3000         │             │        Port: 8080         │
    └───────────────────────────┘             └─────────────┬─────────────┘
                                                            │
                         ┌──────────────────────────────────┤
@@ -38,9 +32,8 @@ Building a web app is a lot like **running a restaurant**. Let's break down the 
           ┌───────────────────────────┐      ┌───────────────────────────┐
           │      FLASK ML API         │      │       MYSQL DATABASE      │
           │  (Python 3.11, scikit)    │      │         (MySQL 8)         │
-          │      Port: 5000           │      │      Port: 3306           │
+          │        Port: 5000         │      │        Port: 3306         │
           └───────────────────────────┘      └───────────────────────────┘
-```
 
 ### Detailed Component Flow
 ```mermaid
