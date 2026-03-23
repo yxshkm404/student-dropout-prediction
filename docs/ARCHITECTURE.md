@@ -21,19 +21,7 @@ Building a web app is a lot like **running a restaurant**. Let's break down the 
 
 ### Architecture Diagram
 
-   ┌───────────────────────────┐             ┌───────────────────────────┐
-   │       FRONTEND APP        │◄───────────►│      SPRING BOOT API      │
-   │  (React + Vite + Tailwind)│             │  (Java 17, Hibernate/JPA) │
-   │        Port: 3000         │             │        Port: 8080         │
-   └───────────────────────────┘             └─────────────┬─────────────┘
-                                                           │
-                        ┌──────────────────────────────────┤
-                        ▼                                  ▼
-          ┌───────────────────────────┐      ┌───────────────────────────┐
-          │      FLASK ML API         │      │       MYSQL DATABASE      │
-          │  (Python 3.11, scikit)    │      │         (MySQL 8)         │
-          │        Port: 5000         │      │        Port: 3306         │
-          └───────────────────────────┘      └───────────────────────────┘
+![alt text](image.png)
 
 ### Detailed Component Flow
 ```mermaid
